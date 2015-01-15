@@ -23,9 +23,11 @@ namespace Callcenter.User
         {
             if (!Page.IsPostBack)
             {
-
                 context = new DBContext("DefaultConnection");
                 equipmentTypeManager = new EquipmentTypeManager(context);
+                MembershipUser user = Membership.GetUser();
+                Guid userId = user == null ? Guid.Empty : (Guid)user.ProviderUserKey;
+                LblError.Text = userId.ToString();
                 //Con request pillamos los parametros de la url
                 string idQueryString = Request.QueryString["Id"];
                 if (idQueryString != null)
@@ -70,7 +72,6 @@ namespace Callcenter.User
                 //Cogemos la información del usuario actual, en userId cogeremos su id o un guid vacio si no esta logueado
                 MembershipUser user = Membership.GetUser();
                 Guid userId = user == null ? Guid.Empty : (Guid)user.ProviderUserKey;
-                LblError.Text = userId.ToString();
 
                 //IEnumerable<Incidence> list = incidenceService.GetIncidentByUser((Guid)Membership.GetUser().ProviderUserKey);
                 IQueryable<EquipmentType> list = etManager.GetAll();
