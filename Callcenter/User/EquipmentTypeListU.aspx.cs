@@ -70,6 +70,7 @@ namespace Callcenter.User
                 //Cogemos la información del usuario actual, en userId cogeremos su id o un guid vacio si no esta logueado
                 MembershipUser user = Membership.GetUser();
                 Guid userId = user == null ? Guid.Empty : (Guid)user.ProviderUserKey;
+                LblError.Text = userId.ToString();
 
                 //IEnumerable<Incidence> list = incidenceService.GetIncidentByUser((Guid)Membership.GetUser().ProviderUserKey);
                 IQueryable<EquipmentType> list = etManager.GetAll();
