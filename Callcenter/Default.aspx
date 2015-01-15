@@ -6,7 +6,6 @@
     </section>
 </asp:Content>
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-<asp:Label ID="Label1" runat="server" Text=""></asp:Label>
     <h3>Para usar la plataforma:</h3>
     <ol class="round">
         <li class="one">
