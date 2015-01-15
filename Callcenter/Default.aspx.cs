@@ -14,7 +14,7 @@ namespace Callcenter
         {
             MembershipUser userX = Membership.GetUser();
             Guid userIdX = userX == null ? Guid.Empty : (Guid)userX.ProviderUserKey;
-            Label1.Text = userIdX.ToString(); 
+            Label1.Text = userIdX.ToString();
         }
     }
 }
