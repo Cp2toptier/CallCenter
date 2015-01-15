@@ -73,20 +73,23 @@ namespace Callcenter
             MembershipUser userX = Membership.GetUser();
             Guid userIdX = userX == null ? Guid.Empty : (Guid)userX.ProviderUserKey;
             DBContext dbcontext = new DBContext("DefaultConnection");
-            if (userX.UserName.ToString() == "Admin")
+            if (userIdX.ToString() == "00000000-0000-0000-0000-000000000000")
             {
-                adminMenu.Visible = true;
-                userMenu.Visible = false;
+                    adminMenu.Visible = false;
+                    userMenu.Visible = false;
             }
-            else if (userIdX.ToString() != "00000000-0000-0000-0000-000000000000")
+            else 
             {
-                adminMenu.Visible = false;
-                userMenu.Visible = true;
-            }
-            else
-            {
-                adminMenu.Visible = false;
-                userMenu.Visible = false;
+                if (userX.UserName.ToString()=="Admin")
+                {
+                    adminMenu.Visible = true;
+                    userMenu.Visible = false;
+                }
+                else
+                {
+                    adminMenu.Visible = false;
+                    userMenu.Visible = true;
+                }
             }
         }
     }
