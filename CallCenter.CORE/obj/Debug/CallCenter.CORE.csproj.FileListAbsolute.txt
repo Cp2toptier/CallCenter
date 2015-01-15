@@ -1,0 +1,10 @@
+C:\Users\PCxx\Desktop\callcenter\CallCenter.CORE\bin\Debug\CallCenter.CORE.dll
+C:\Users\PCxx\Desktop\callcenter\CallCenter.CORE\bin\Debug\CallCenter.CORE.pdb
+C:\Users\PCxx\Desktop\callcenter\CallCenter.CORE\obj\Debug\CallCenter.CORE.dll
+C:\Users\PCxx\Desktop\callcenter\CallCenter.CORE\obj\Debug\CallCenter.CORE.pdb
+C:\Users\PCxx\Desktop\callcenter\CallCenter.CORE\obj\Debug\CallCenter.CORE.csprojResolveAssemblyReference.cache
+C:\CallCenter\CallCenter.CORE\bin\Debug\CallCenter.CORE.dll
+C:\CallCenter\CallCenter.CORE\bin\Debug\CallCenter.CORE.pdb
+C:\CallCenter\CallCenter.CORE\obj\Debug\CallCenter.CORE.csprojResolveAssemblyReference.cache
+C:\CallCenter\CallCenter.CORE\obj\Debug\CallCenter.CORE.dll
+C:\CallCenter\CallCenter.CORE\obj\Debug\CallCenter.CORE.pdb
