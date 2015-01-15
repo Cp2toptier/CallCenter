@@ -22,9 +22,9 @@
         <br />
         <br />
         <br />
-        <asp:Button ID="BtnEdit" runat="server" Text="Editar" OnClick="BtnEdit_Click" />
-        <asp:Button ID="btnClose" runat="server" Text="Cerrar incidencia" OnClick="btnClose_Click" />
-        <asp:Button ID="BtnBackView" runat="server" Text="Volver a incidencia" OnClick="BtnBackView_Click" />
+        <asp:Button ID="BtnEdit" runat="server" Text="Editar"/>
+        <asp:Button ID="btnClose" runat="server" Text="Cerrar incidencia"/>
+        <asp:Button ID="BtnBackView" runat="server" Text="Volver a incidencia"/>
         <br />
         <br />
         <asp:Label ID="LblError" runat="server" BackColor="Red" Font-Bold="True"></asp:Label>
