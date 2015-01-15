@@ -5,7 +5,7 @@
         
     </section>
 </asp:Content>
-<asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+<asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent" Text="">
 <asp:Label ID="Label1" runat="server"></asp:Label>
     <h3>Para usar la plataforma:</h3>
     <ol class="round">
