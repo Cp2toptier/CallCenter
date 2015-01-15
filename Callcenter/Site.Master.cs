@@ -73,7 +73,7 @@ namespace Callcenter
             MembershipUser userX = Membership.GetUser();
             Guid userIdX = userX == null ? Guid.Empty : (Guid)userX.ProviderUserKey;
             DBContext dbcontext = new DBContext("DefaultConnection");
-            if (userIdX.ToString() == "16ca1637-96af-4aa5-a3c6-f3d9133fe015")
+            if (userX.UserName.ToString() == "Admin")
             {
                 adminMenu.Visible = true;
                 userMenu.Visible = false;
