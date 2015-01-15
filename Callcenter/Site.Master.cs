@@ -80,7 +80,7 @@ namespace Callcenter
             }
             else 
             {
-                if (userX.UserName.ToString()=="Admin")
+                if (userX.UserName.ToString()=="Admin" || userX.UserName.ToString()=="admin")
                 {
                     adminMenu.Visible = true;
                     userMenu.Visible = false;
